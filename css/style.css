@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS 初始化 */
+body, div, span, i, b, em, strong, img, h1, h2, h3, a, ul, li, input, select, option, button, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+body {
+    font-family: "微软雅黑";
+    color: #000;
+    margin: 0 auto;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    display: block;
+}
+
+.clock{ position: relative; width: 759px; height: 735px; background: url("../images/bg.jpg") no-repeat; margin: 0 auto;}
+#hour{ position: absolute; top: 225px; left: 363px; width: 32px; height: 162px; transform-origin:50% 91%;/* transform:rotate(0deg);*/}
+#minute{ position: absolute; top: 166px; left: 363px; width: 32px; height: 220px; transform-origin:50% 93%;/* transform:rotate(0deg);*/}
+#second{ position: absolute; top: 134px; left: 363px; width: 32px; height: 320px; transform-origin:50% 75%;/* transform:rotate(0deg);*/}
